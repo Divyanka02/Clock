@@ -4,12 +4,12 @@ setInterval(() => {
  htime = d.getHours();
  mtime = d.getMinutes();
  stime = d.getSeconds();
- hrotation = 30*htime + mtime/2;
- mrotation = 6*mtime;
- srotation = 6*stime;
+ hourrotation = 30*htime + mtime/2;
+ minuterotation = 6*mtime;
+ secondrotation = 6*stime;
 
- hour.style.transform =`rotate(${hrotation}deg)`;
- minute.style.transform =`rotate(${mrotation}deg)`;
- second.style.transform =`rotate(${srotation}deg)`;
+ hour.style.transform =`rotate(${hourrotation}deg)`;
+ minute.style.transform =`rotate(${minuterotation}deg)`;
+ second.style.transform =`rotate(${secondrotation}deg)`;
 },1000);
 console.log("hello world");
